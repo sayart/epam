@@ -1,4 +1,4 @@
-package com.gmail.slartua;
+package com.gmail.slartua.book.model.entity;
 
 public class Book {
 	private String title;
@@ -56,7 +56,10 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
-	
-	
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", author=" + author + ", publisher=" + publisher + ", year=" + year
+				+ ", pages=" + pages + ", price=" + price + "]";
+	}
+		
 }
