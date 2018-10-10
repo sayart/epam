@@ -13,12 +13,11 @@ public class BooksModel {
 	public void setBooks(Book[] books) {
 		this.books = books;
 	}
-	
 	public Book[] getByAuthor(String author) {
 		Book[] temp = new Book[books.length];
 		int count = 0;
 		for (int i = 0; i < temp.length; i++) {
-			if (books[i].getAuthor().equals(author)) {
+			if (books[i].getAuthor().equalsIgnoreCase(author)) {
 				temp[count++] = books[i];
 			}
 		}
@@ -29,7 +28,7 @@ public class BooksModel {
 		Book[] temp = new Book[books.length];
 		int count = 0;
 		for (int i = 0; i < temp.length; i++) {
-			if (books[i].getPublisher().equals(publisher)) {
+			if (books[i].getPublisher().equalsIgnoreCase(publisher)) {
 				temp[count++] = books[i];
 			}
 		}
@@ -44,7 +43,6 @@ public class BooksModel {
 				temp[count++] = books[i];
 			}
 		}
-		Arrays.sort(temp, new BookComparator(1));
 		return Arrays.copyOf(temp, count);
 	}
 	
@@ -54,10 +52,18 @@ public class BooksModel {
 		for (int i = 0; i < temp.length; i++) {
 			temp[count++] = books[i];
 		}
-		Arrays.sort(temp, new BookComparator(2));
+		Arrays.sort(temp, new BookComparator());
 		return Arrays.copyOf(temp, count);
 	}
 	
-	
-	
+//	public Book[] sortByMenuChoise() {
+//		switch(inputMenuChoise) {
+//			case 1: return getByAuthor(inputStringValue);
+//			case 2: return getByPublisher(inputStringValue);
+//			case 3: return getFromYear(inputYearValue);
+//			case 4: return sortByPublisher();			
+//		}
+//		return this.books;
+//	}
+		
 }

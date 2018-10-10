@@ -11,12 +11,16 @@ public class Controller {
 	
 	public void run() {
 		model.setBooks(DataSource.getBooks());
-		searchBooksByAuthor("Shevchenko");
-		
+		switch(view.inputMenu()) {
+		case 1:	searchBooksByAuthor(view.inputAuthor());
+				break;
+		case 2: searchBooksByPublisher(view.inputPublisher());
+				break;
+		case 3: searchBooksFromYear(view.inputYear());
+				break;
+		case 4: view.printBook("Sort by publisher:", model.sortByPublisher());
+		}
 		view.printBook("\nAll books:", model.getBooks());
-		
-		
-		
 	}
 	
 	private void searchBooksByAuthor(String author) {
@@ -25,6 +29,22 @@ public class Controller {
 			view.printMessage("No books - " + author);
 		} else {
 			view.printBook("Author "  + author +":", result);
+		}
+	}
+	private void searchBooksByPublisher(String publisher) {
+		Book[] result = model.getByPublisher(publisher);
+		if(result.length == 0) {
+			view.printMessage("No books - " + publisher);
+		} else {
+			view.printBook("Publisher "  + publisher +":", result);
+		}
+	}
+	private void searchBooksFromYear(int year) {
+		Book[] result = model.getFromYear(year);
+		if(result.length == 0) {
+			view.printMessage("No books from " + year);
+		} else {
+			view.printBook("From "  + year +":", result);
 		}
 	}
 }

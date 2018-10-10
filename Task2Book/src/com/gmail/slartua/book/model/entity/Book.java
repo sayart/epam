@@ -11,6 +11,34 @@ public class Book {
 	public Book() {
 		super();
 	}
+	@Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Book)) return false;
+
+        Book book = (Book) o;
+
+        if (year != book.year) return false;
+        if (pages != book.pages) return false;
+        if (Double.compare(book.price, price) != 0) return false;
+        if (!title.equals(book.title)) return false;
+        if (!author.equals(book.author)) return false;
+        return publisher.equals(book.publisher);
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = title.hashCode();
+        result = 31 * result + author.hashCode();
+        result = 31 * result + publisher.hashCode();
+        result = 31 * result + year;
+        result = 31 * result + pages;
+        temp = Double.doubleToLongBits(price);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
 	public Book(String title, String author, String publisher, int year, int pages, double price) {
 		super();
 		this.title = title;
