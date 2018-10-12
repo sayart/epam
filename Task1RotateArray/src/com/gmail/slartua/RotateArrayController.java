@@ -17,10 +17,9 @@ public class RotateArrayController {
 	public void draw() {
 		model.setArraySize(InputUtility.inputPositiveIntValueWithScanner(view));
 		int[][] array = model.generateArray();
-		model.drawArray(array);
+		view.drawArray(array);
 		view.printMessage(RotateArrayView.OUR_ROTATE_90_DEGREE);
-		model.drawArray(model.rotateArrayCounterClockWise(array));
-
+		view.drawArray(model.rotateArrayCounterClockWise(array));
 	}
 
 }

@@ -17,15 +17,14 @@ public class PiramidaModel {
 		this.height = height;
 	}
 	public void drawPiramid() {
-		int h = height;
 		int n = 1;
-		for (int i = 0; i < h; i++) {
-			for (int j = 0; j < 2 * h - 1; j++) {
-				if (j <= h - 2 - i || j >= h + i) {
+		for (int lines = 0; lines < height; lines++) {
+			for (int column = 0; column < 2 * height - 1; column++) {
+				if (column <= height - 2 - lines || column >= height + lines) {
 					System.out.print(" ");
 				} else {
 					System.out.print(n);
-					if (j < h - 1) {
+					if (column < height - 1) {
 						n++;
 					} else {
 						n--;

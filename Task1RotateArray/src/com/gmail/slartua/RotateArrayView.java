@@ -8,4 +8,15 @@ public class RotateArrayView {
 	public void printMessage(String message) {
 		System.out.println(message);
 	}
-}
+
+	public void drawArray(int[][] array) {
+		for (int[] line : array) {
+			for(int column: line) {
+				System.out.print(column + "\t");
+			}
+			System.out.println();
+			System.out.println();
+		}
+		
+	}
+}	

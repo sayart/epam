@@ -21,15 +21,15 @@ public class RotateArrayModel {
 		this.arraySize = arraySize;
 	}
 
-	public void drawArray(int[][] array) {
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j < array[0].length; j++) {
-				System.out.print(array[i][j] + "\t");
-			}
-			System.out.println();
-			System.out.println();
-		}
-	}
+//	public void drawArray(int[][] array) {
+//		for (int i = 0; i < array.length; i++) {
+//			for (int j = 0; j < array[0].length; j++) {
+//				System.out.print(array[i][j] + "\t");
+//			}
+//			System.out.println();
+//			System.out.println();
+//		}
+//	}
 
 	public int[][] generateArray() {
 		int[][] array = new int[arraySize][arraySize];
