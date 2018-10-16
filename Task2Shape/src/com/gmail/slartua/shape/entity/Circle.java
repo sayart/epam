@@ -31,7 +31,10 @@ public class Circle extends Shape {
 
 	@Override
 	public String toString() {
-		return "Circle [radius=" + radius + ", shapeColor=" + shapeColor + ", Area=" + calcArea() + "]";
+		return super.toString() +
+				this.getClass().getSimpleName()+
+				" [radius=" + radius + 
+				", Area=" + calcArea() + "]";
 	}
 	
 	

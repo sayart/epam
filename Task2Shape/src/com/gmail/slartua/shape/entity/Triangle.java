@@ -45,8 +45,11 @@ public class Triangle extends Shape {
 	}
 	@Override
 	public String toString() {
-		return "Triangle [baseLength=" + baseLength + ", height=" + height + ", shapeColor=" + shapeColor
-				+ ", Area=" + calcArea() + "]";
+		return super.toString() + 
+				this.getClass().getSimpleName() + 
+				"[baseLength=" + baseLength + 
+				", height=" + height + 
+				", Area=" + calcArea() + "]";
 	}
 		
 }

@@ -48,9 +48,12 @@ public class Rectangel extends Shape {
 
 	@Override
 	public String toString() {
-		return "Rectangel [width=" + width + ", height=" + height + ", shapeColor=" + shapeColor + ", Area="
-				+ calcArea() + "]";
+		return super.toString() +
+				this.getClass().getSimpleName()+
+				"[width=" + width + ", height=" + height + ", Area=" + calcArea() + "]";
 	}
+
+
 	
 
 }
