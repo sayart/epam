@@ -22,7 +22,7 @@ public class WoodConstructor extends Constructor {
 
 	@Override
 	public String toString() {
-		return super.toString() + this.getClass().getSimpleName() + "packDimensions=" + packDimensions + "]";
+		return super.toString() + "packDimensions=" + packDimensions + "]";
 	}
 
 }

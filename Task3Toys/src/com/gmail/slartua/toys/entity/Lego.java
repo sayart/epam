@@ -20,7 +20,7 @@ public class Lego extends Constructor {
 
 	@Override
 	public String toString() {
-		return super.toString() + this.getClass().getSimpleName() + " type=" + type + "]";
+		return super.toString() + " type=" + type + "]";
 	}
 	
 	

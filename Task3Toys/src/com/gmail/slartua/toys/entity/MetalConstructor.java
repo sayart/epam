@@ -20,7 +20,7 @@ public class MetalConstructor extends Constructor{
 	}
 	@Override
 	public String toString() {
-		return super.toString() + this.getClass().getSimpleName()+ " weight=" + weight + "]";
+		return super.toString() + " weight=" + weight + "]";
 	}
 	
 	

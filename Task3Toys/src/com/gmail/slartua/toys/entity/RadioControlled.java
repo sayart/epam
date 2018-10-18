@@ -26,7 +26,7 @@ public class RadioControlled extends Toy{
 	}
 	@Override
 	public String toString() {
-		return  super.toString() + this.getClass().getSimpleName() + "range=" + range + ", color=" + color + "]";
+		return  super.toString() + "range=" + range + ", color=" + color + "]";
 	}
 		
 }

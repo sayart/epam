@@ -33,7 +33,8 @@ public class Toy {
 	}
 	@Override
 	public String toString() {
-		return this.getClass().getSimpleName() + " [brandName=" + brandName + ", ageFrom=" + ageFrom + ", price=" + price + "]";
+		return this.getClass().getSimpleName() + 
+				" [brandName=" + brandName + ", ageFrom=" + ageFrom + ", price=" + price + ",";
 	}
 	
 	

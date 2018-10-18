@@ -45,8 +45,7 @@ public class Triangle extends Shape {
 	}
 	@Override
 	public String toString() {
-		return super.toString() + 
-				this.getClass().getSimpleName() + 
+		return super.toString() +  
 				"[baseLength=" + baseLength + 
 				", height=" + height + 
 				", Area=" + calcArea() + "]";

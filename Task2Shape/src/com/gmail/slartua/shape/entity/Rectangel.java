@@ -49,7 +49,6 @@ public class Rectangel extends Shape {
 	@Override
 	public String toString() {
 		return super.toString() +
-				this.getClass().getSimpleName()+
 				"[width=" + width + ", height=" + height + ", Area=" + calcArea() + "]";
 	}
 

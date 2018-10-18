@@ -40,7 +40,7 @@ public class GameRoomModel<E extends Toy> {
 				if (toyOne == null && toyTwo == null) {
 					return 0;
 				}
-				return (toyOne.getPrice() > toyTwo.getPrice()) ? 1 : -1;
+				return (toyOne.getPrice() > toyTwo.getPrice()) ? -1 : 1;
 			}
 
 		});

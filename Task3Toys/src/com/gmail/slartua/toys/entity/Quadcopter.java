@@ -22,7 +22,7 @@ public class Quadcopter extends RadioControlled {
 
 	@Override
 	public String toString() {
-		return super.toString() + this.getClass().getSimpleName() + " camera=" + camera + "]";
+		return super.toString() + " camera=" + camera + "]";
 	}
 	
 	

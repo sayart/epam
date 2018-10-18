@@ -26,6 +26,7 @@ public class Constructor extends Toy {
 	}
 	@Override
 	public String toString() {
-		return super.toString() + this.getClass().getSimpleName() + " numberOfDetails=" + numberOfDetails + ", material=" + material;
+		return super.toString() +
+				" numberOfDetails=" + numberOfDetails + ", material=" + material;
 	}
 }
