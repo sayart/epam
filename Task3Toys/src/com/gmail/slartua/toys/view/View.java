@@ -12,9 +12,9 @@ public class View {
 	public void printToys(String message, ArrayList<Toy> toys) {
 		System.out.println(message);
 		for (Toy toy : toys) {
-			if(toy != null) {
+//			if(toy != null) {
 				System.out.println(toy);
-			}
+//			}
 		}
 	}
 	

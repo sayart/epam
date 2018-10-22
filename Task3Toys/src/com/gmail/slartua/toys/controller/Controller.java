@@ -14,7 +14,6 @@ public class Controller {
 		view.printToys("Sort from age 5", model.sortFromAge(5));
 		view.printResult("\nTotal price: ", model.totalPrice());
 		view.printToys("\nSort by price from 200 to 500", 
-				model.sortByPrice(200, 500));
-		
+		model.sortByPrice(200, 500));
 	}
 }

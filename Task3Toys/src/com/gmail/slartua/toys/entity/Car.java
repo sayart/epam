@@ -5,7 +5,6 @@ public class Car extends RadioControlled{
 
 	public Car() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Car(String brandName, int ageFrom, double price, int range, String color, int remoteControlFrequency) {
@@ -24,7 +23,6 @@ public class Car extends RadioControlled{
 	@Override
 	public String toString() {
 		return super.toString() +
-				this.getClass().getSimpleName() +
 				" remoteControlFrequency=" + remoteControlFrequency + "]";
 	}	
 }
