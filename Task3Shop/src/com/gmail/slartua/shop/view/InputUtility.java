@@ -1,5 +1,6 @@
 package com.gmail.slartua.shop.view;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class InputUtility {
@@ -30,6 +31,12 @@ public class InputUtility {
 	public static String[] inputDevices(View view) {
 		view.printMessage(View.INPUT_DEVICES);
 		String[] temp = sc.nextLine().split(", ");
+		System.out.println(Arrays.toString(temp));
 		return temp;
+	}
+	public static String findDevice(View view) {
+		view.printMessage(View.INPUT_SEARCH_DEVICE);
+		sc.next();
+		return sc.nextLine();
 	}
 }

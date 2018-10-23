@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class DeviceStore {
-	private String name;
+	private String name = "DeviceStore";
 	private Department[] departments = new Department[1];
 
 	public DeviceStore() {
@@ -29,19 +29,18 @@ public class DeviceStore {
 		private String[] devices;
 		private int rawInStore;
 
-		{
-			DeviceStore.this.add(this);
-			rawInStore = departments.length;
-		}
+		
 
 		public Department() {
 			super();
+			rawInStore = departments.length;
 		}
 
 		public Department(String departmentName, String[] devices) {
 			super();
 			this.departmentName = departmentName;
 			this.devices = devices;
+			rawInStore = departments.length;
 		}
 
 		public String getDepartmentName() {
@@ -69,8 +68,9 @@ public class DeviceStore {
 		}
 
 		public boolean findDevice(String str) {
+			
 			for (String device : devices) {
-				if (device.equalsIgnoreCase(str)) {
+				if (device != null && device.equalsIgnoreCase(str)) {
 					return true;
 				}
 			}
@@ -120,7 +120,7 @@ public class DeviceStore {
 
 	public String findDepartmentByDevice(String device) {
 		for (Department department : departments) {
-			if (department.findDevice(device)) {
+			if (department!= null&&department.findDevice(device)) {
 				return department.getClass().getSimpleName();
 			}
 		}

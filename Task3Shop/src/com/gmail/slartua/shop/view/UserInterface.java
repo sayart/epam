@@ -5,6 +5,7 @@ public interface UserInterface {
 	String INPUT_NUMBER_OF_DEPARTMENTS = "Input number of departments";
 	String INPUT_DEPARTMENT_NAME = "Input department name";
 	String INPUT_DEVICES = "Input devices through coma";
+	String INPUT_SEARCH_DEVICE = "Input search device";
 	
 	
 	
