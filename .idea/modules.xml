@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Task1RotateArray/Task1RotateArray.iml" filepath="$PROJECT_DIR$/Task1RotateArray/Task1RotateArray.iml" />
       <module fileurl="file://$PROJECT_DIR$/Task2Book/Task2Book.iml" filepath="$PROJECT_DIR$/Task2Book/Task2Book.iml" />
       <module fileurl="file://$PROJECT_DIR$/Task2Shape/Task2Shape.iml" filepath="$PROJECT_DIR$/Task2Shape/Task2Shape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Task2Book/Task2Book/Task2_Book.iml" filepath="$PROJECT_DIR$/Task2Book/Task2Book/Task2_Book.iml" />
       <module fileurl="file://$PROJECT_DIR$/Task3Shop/Task3Shop.iml" filepath="$PROJECT_DIR$/Task3Shop/Task3Shop.iml" />
       <module fileurl="file://$PROJECT_DIR$/Task3Toys/Task3Toys.iml" filepath="$PROJECT_DIR$/Task3Toys/Task3Toys.iml" />
     </modules>

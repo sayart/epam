@@ -1,6 +1,5 @@
 package com.gmail.slartua.tours.model;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -58,7 +57,7 @@ public class Tours<T extends Tour> {
 		case 2: 
 			for (Iterator<T> iterator = temp.iterator(); iterator.hasNext();) {
 				T t = (T) iterator.next();
-				if(t instanceof HotTour) {
+				if(t instanceof HealthyTour) {
 					temp.add(t);
 				}
 			}
@@ -79,10 +78,26 @@ public class Tours<T extends Tour> {
 		}
 		return (ArrayList<T>)temp;		
 	}
-	public ArrayList<T> getByTransportType(){
-		
+	public ArrayList<T> getByTransportType(Transport transport){
+		List<T> temp = new ArrayList<>();
+		for (Iterator<T> iterator = temp.iterator(); iterator.hasNext();) {
+			T t = (T) iterator.next();
+			if( t.getTransport().equals(transport.getTransportType())) {
+				temp.add(t);
+			}
+		}
+		return (ArrayList<T>)temp;
 	}
-	
+	public ArrayList<T> getByDays(int days){
+		List<T> temp = new ArrayList<>();
+		for (Iterator<T> iterator = temp.iterator(); iterator.hasNext();) {
+			T t = (T) iterator.next();
+			if ( t.getDays() > days) {
+				temp.add(t);
+			}
+		}
+		return (ArrayList<T>)temp;
+	}
 	
 	
 }
