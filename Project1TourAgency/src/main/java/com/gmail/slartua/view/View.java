@@ -11,13 +11,12 @@ public class View implements ConstantsMessage, Menu {
     }
     public void printToursList(String message, ArrayList<Tour> toursList){
         System.out.println(message);
-        for (Iterator<Tour> iterator = toursList.iterator(); iterator.hasNext();) {
-            Tour tour = (Tour) iterator.next();
+        if(toursList.isEmpty())System.out.println("Not found with such parameters");
+        for (Tour tour : toursList) {
             if (tour != null) {
                System.out.println(tour.toString());
-            } else {
-                System.out.println(TOURS_NOT_FOUND);
             }
+
         }
     }
 
