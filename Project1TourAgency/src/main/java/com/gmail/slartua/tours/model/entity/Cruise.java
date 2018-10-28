@@ -5,7 +5,6 @@ public class Cruise extends Tour {
 	public String port;
 	public Cruise() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Cruise(double price, int days, String country, boolean allInclusive, String linerName, String port) {
 		super(price, days, country, allInclusive, Transport.SHIP.getTransportType());

@@ -6,7 +6,6 @@ public class Excursion extends Tour{
 	
 	public Excursion() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Excursion(double price, int days, String country, boolean allInclusive, String transport, String name, boolean guide) {
 		super(price, days, country, allInclusive, transport);
