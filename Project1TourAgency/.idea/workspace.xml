@@ -4,10 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="828589a0-d89e-4828-9421-d2c19cb7ce7b" name="Default Changelist" comment="fixs">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="828589a0-d89e-4828-9421-d2c19cb7ce7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gmail/slartua/tours/model/Tours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/slartua/tours/model/Tours.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,6 +54,7 @@
     <session id="-1871560456">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -63,13 +62,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="949" />
-          <entry key="txt" value="4" />
+          <entry key="txt" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="949" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -172,7 +171,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <flattenPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
@@ -185,34 +184,27 @@
               <item name="Project1TourAgency" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project1TourAgency" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
             <path>
-              <item name="Project1TourAgency" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project1TourAgency" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project1TourAgency" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project1TourAgency" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project1TourAgency" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project1TourAgency" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Project1TourAgency" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Project1TourAgency" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540760655186" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540760849122" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task2BooksTask4update" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -271,7 +263,7 @@
       <workItem from="1540700992531" duration="5390000" />
       <workItem from="1540712542266" duration="4384000" />
       <workItem from="1540721535480" duration="12154000" />
-      <workItem from="1540745548739" duration="6924000" />
+      <workItem from="1540745548739" duration="7167000" />
     </task>
     <task id="LOCAL-00001" summary="fixs">
       <created>1540747100530</created>
@@ -287,11 +279,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540747285059</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="generate javadoc files for model - com.gmail.slartua.entity.Tours">
+      <created>1540760829619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540760829619</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28852000" />
+    <option name="totallyTimeSpent" value="29095000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -303,10 +302,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="370" y="210" width="1312" height="1030" extended-state="1" />
-    <editor active="true" />
+    <frame x="370" y="210" width="1312" height="1030" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -315,7 +313,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32947975" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32947975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,7 +342,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixs" />
+    <MESSAGE value="generate javadoc files for model - com.gmail.slartua.entity.Tours" />
+    <option name="LAST_COMMIT_MESSAGE" value="generate javadoc files for model - com.gmail.slartua.entity.Tours" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
