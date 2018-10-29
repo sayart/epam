@@ -1,4 +1,4 @@
-package com.gmail.slartua.journal.com.gmail.slartua.journal.model.entity;
+package com.gmail.slartua.journal.model.entity;
 
 import java.time.LocalDate;
 import java.util.Arrays;

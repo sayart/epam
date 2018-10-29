@@ -1,6 +1,6 @@
-package com.gmail.slartua.journal.com.gmail.slartua.journal.model;
+package com.gmail.slartua.journal.model;
 
-import com.gmail.slartua.journal.com.gmail.slartua.journal.model.entity.Student;
+import com.gmail.slartua.journal.model.entity.Student;
 
 import java.util.ArrayList;
 
@@ -22,6 +22,9 @@ public class Journal<T extends Student>{
 
     public void setJournal(ArrayList<T> journal) {
         this.journal = journal;
+    }
+    public void addStudent(T student){
+        journal.add(student);
     }
 
 }

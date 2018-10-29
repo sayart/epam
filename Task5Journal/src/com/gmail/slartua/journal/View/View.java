@@ -1,6 +1,6 @@
 package com.gmail.slartua.journal.View;
 
-import com.gmail.slartua.journal.com.gmail.slartua.journal.model.entity.Student;
+import com.gmail.slartua.journal.model.entity.Student;
 
 import java.util.ArrayList;
 
