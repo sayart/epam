@@ -8,62 +8,67 @@ public class InputUtility {
     private static Scanner scanner = new Scanner(System.in);
 
     public static int inputMenu(View view){
-        int value = 0;
-        view.printMessage(View.CHOOSE_TOUR +
-                View.MENU1);
+        int value;
         while (true) {
-            value = scanner.nextInt();
-            if (value < 1 && value > 4) {
-                view.printMessage("Wrong number! "
-                        + View.CHOOSE_TOUR);
-                scanner.next();
-            }
-            return value;
+            view.printMessage(View.CHOOSE_TOUR + View.MENU1);
+            if (scanner.hasNextInt()) {
+                value = scanner.nextInt();
+                if (value > 0 && value < 5){
+                    break;
+                }
+            } else scanner.next();
+            view.printMessage("Wrong number! ");
         }
+        return value;
     }
+
     public static String inputTransport(View view){
-        int value = 0;
-        view.printMessage(View.CHOOSE_TRANSPORT +
-                View.MENU2);
+        int value;
         while (true) {
-            value = scanner.nextInt();
-            if (value < 1 && value > 3) {
-                view.printMessage("Wrong number! "
-                        + View.CHOOSE_TRANSPORT);
-                scanner.next();
-            }
-            switch (value){
-                case 1: return Transport.BUS.getTransportType();
-                case 2: return Transport.PLANE.getTransportType();
-                case 3: return Transport.SHIP.getTransportType();
-            }
+            view.printMessage(View.CHOOSE_TRANSPORT + View.MENU2);
+            if (scanner.hasNextInt()) {
+                value = scanner.nextInt();
+                if (value > 0 && value < 4){
+                    break;
+                }
+            } else scanner.next();
+            view.printMessage("Wrong number! ");
+        }
+        switch (value){
+            case 1: return Transport.BUS.getTransportType();
+            case 2: return Transport.PLANE.getTransportType();
+            case 3: return Transport.SHIP.getTransportType();
+            default: return "Transport";
         }
     }
+
     public static int inputMinimumDays(View view){
-        int value = 0;
-        view.printMessage(View.INPUT_DAYS);
+        int value;
         while (true) {
-            value = scanner.nextInt();
-            if (value < 1) {
-                view.printMessage("Wrong number! "
-                        + View.INPUT_DAYS);
-                scanner.next();
-            }
-            return value;
+            view.printMessage(View.INPUT_DAYS);
+            if (scanner.hasNextInt()) {
+                value = scanner.nextInt();
+                if (value > 0){
+                    break;
+                }
+            } else scanner.next();
+            view.printMessage("Wrong number! ");
         }
+        return value;
     }
     public static int inputPriceToSort(View view){
-        int value = 0;
-        view.printMessage(View.INPUT_PRICE);
+        int value;
         while (true) {
-            value = scanner.nextInt();
-            if (value < 1) {
-                view.printMessage("Wrong number! "
-                        + View.INPUT_PRICE);
-                scanner.next();
-            }
-            return value;
+            view.printMessage(View.INPUT_PRICE);
+            if (scanner.hasNextInt()) {
+                value = scanner.nextInt();
+                if (value > 0){
+                    break;
+                }
+            } else scanner.next();
+            view.printMessage("Wrong number! ");
         }
+        return value;
     }
 
 
