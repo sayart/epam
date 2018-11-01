@@ -5,7 +5,7 @@ import com.gmail.slartua.journal.model.entity.Student;
 import java.util.ArrayList;
 
 public class Journal<T extends Student>{
-    private ArrayList<T> journal;
+    private ArrayList<T> journal = new ArrayList<>();
 
     public Journal() {
         super();

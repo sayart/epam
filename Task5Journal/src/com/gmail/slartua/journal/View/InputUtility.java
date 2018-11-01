@@ -2,12 +2,23 @@ package com.gmail.slartua.journal.View;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.Scanner;
-import java.util.zip.DataFormatException;
 
 public class InputUtility {
     private static Scanner scanner = new Scanner(System.in);
+
+    public static int inputNumberOfStudent(View view){
+        int value;
+        while (true){
+            view.printMessage(View.INPUT_NUMBER_OF_STUDENTS);
+            if(scanner.hasNextInt()){
+                value = scanner.nextInt();
+                if(value > 0) break;
+            }else scanner.next();
+            view.printMessage("Input more than 0");
+        }
+        return value;
+    }
 
     public static String inputFirstName(View view){
         String value;
@@ -39,18 +50,14 @@ public class InputUtility {
     public static LocalDate inputDateOfBirth(View view){
         String value;
         LocalDate localDate;
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         while(true){
             view.printMessage(View.INPUT_DATE_OF_BIRTH);
             if(scanner.hasNextLine()){
                 value = scanner.nextLine();
                 if(value.matches("(0?[1-9]|[12][0-9]|3[01])-(0?[1-9]|1[012])-((19|20)\\d{2})")){
-                    try {
-                        localDate = LocalDate.parse(value, formatter);
-                        break;
-                    } catch (DateTimeParseException e){
-                        System.out.println(e);
-                    }
+                    localDate = LocalDate.parse(value, formatter);
+                    break;
                 }
             } else scanner.next();
             view.printMessage(View.WRONG_DATE_OF_BIRTH);
