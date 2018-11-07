@@ -1,0 +1,9 @@
+Title1,Shevchenko,ABB,2001,102,42.12
+Title2,Franko,BBC,2002,12,87.85
+Title3,Lesya,CBC,2000,15,87.12
+Title4,Skovoroda,NBC,2000,223,487.17
+Title5,Shevchenko,FBC,2001,112,245.12
+Title6,Shevchenko,Ababagalamaga,2000,532,445.12
+Title7,Sheva,ABC,2007,24,45.12
+Title8,Shevchenko,ABC,2002,246,145.12
+Title9,Shevchenko,ABC,2003,144,245.12

@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="978b8575-405c-457c-8538-41a3889de7ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gmail/slartua/string/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gmail/slartua/string/model/TextService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gmail/slartua/string/model/entity/Sentence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gmail/slartua/string/model/entity/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lingvo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lingvo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lingvo/src/com/gmail/slartua/lingvo/Lingvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lingvo/src/com/gmail/slartua/lingvo/Lingvo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lingvo/src/com/gmail/slartua/lingvo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lingvo/src/com/gmail/slartua/lingvo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lingvo/src/com/gmail/slartua/lingvo/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lingvo/src/com/gmail/slartua/lingvo/View.java" afterDir="false" />
-    </list>
+    <list default="true" id="978b8575-405c-457c-8538-41a3889de7ac" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +13,10 @@
     <session id="269639720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.77" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,12 +42,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/gmail/slartua/string/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -70,7 +60,7 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,6 +166,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,26 +201,23 @@
       <option name="presentableId" value="Default" />
       <updated>1541320204110</updated>
       <workItem from="1541320218677" duration="6343000" />
+      <workItem from="1541402190348" duration="146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6343000" />
+    <option name="totallyTimeSpent" value="6489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1929" y="82" width="1938" height="1098" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25349087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -238,15 +225,19 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +268,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -285,7 +276,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/gmail/slartua/string/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
