@@ -10,23 +10,20 @@ public class BooksDAOTxtFileImplementation implements BooksDAO {
         super();
     }
 
-    @Override
-    public void saveBooks(BooksModel booksModel, String filePathName){
+    public void saveBooks(Book[] books, String filePathName) throws IOException{
         PrintWriter printWriter = new PrintWriter(new File(filePathName));
-        for(Book book : booksModel.getBooks()){
-            if (book != null) {
-                printWriter.println(book.getTitle() + "," +
-                        book.getAuthor() + "," +
-                        book.getPublisher() + "," +
-                        book.getYear() + "," +
-                        book.getPages() + "," +
-                        book.getPrice());
+        for(int i = 0; i < books.length; i++){
+            if (books[i] != null) {
+                printWriter.println(books[i].getTitle() + "," +
+                        books[i].getAuthor() + "," +
+                        books[i].getPublisher() + "," +
+                        books[i].getYear() + "," +
+                        books[i].getPages() + "," +
+                        books[i].getPrice());
             }
         }
-
     }
 
-    @Override
     public Book[] loadBooksFromFile(String filePathName)throws IOException{
         Book[] temp = new Book[countBooksInFile(filePathName)];
         BufferedReader br = new BufferedReader(new FileReader(new File(filePathName)));

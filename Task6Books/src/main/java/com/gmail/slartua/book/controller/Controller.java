@@ -27,12 +27,7 @@ public class Controller {
 		case 4: view.printBook("Sort by publisher:", model.sortByPublisher());
 		}
 		view.printBook("\nAll books:", model.getBooks());
-        try {
-            booksDAO.saveBooks(model, "D:\\Java\\epam_course\\epam\\Task2BooksTask4update\\src\\books\\dataf123a.txt");
-        }catch (IOException e){
-            System.out.println(e);
-        }
-//        saveBookInFile();
+        saveBookInFile();
 
     }
 	
@@ -73,7 +68,7 @@ public class Controller {
     private void saveBookInFile(){
         while(true)
         try {
-            booksDAO.saveBooks(model, view.inputFilePathtoSave());
+            booksDAO.saveBooks(model.getBooks(), view.inputFilePathtoSave());
             System.out.println("File saved");
             break;
         } catch (IOException e) {

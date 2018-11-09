@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public interface BooksDAO {
 
-    public void saveBooks(BooksModel booksModel, String filePathName) throws IOException;
+    public void saveBooks(Book[] books, String filePathName) throws IOException;
 
     public Book[] loadBooksFromFile(String filePathName) throws IOException;
 }
