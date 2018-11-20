@@ -1,18 +1,15 @@
 package com.gmail.slartua.string.model;
 
-import com.gmail.slartua.string.model.entity.Sentence;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class TextService {
-//    private Sentence[] sentences;
 
-    public String loadTextFromFile(File file){
+    public static String loadTextFromFile(String filePath){
         StringBuilder sb = new StringBuilder();
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))){
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(filePath)))){
             String text = "";
             for (; (text = bufferedReader.readLine()) !=null;){
                 sb.append(text);
@@ -23,11 +20,7 @@ public class TextService {
         }
         return sb.toString();
     }
-
-    public Sentence[] getSentencesFromText(String string){
-        Sentence[] sentences = string.split("")
-    }
-
-
+    
+    
 
 }
