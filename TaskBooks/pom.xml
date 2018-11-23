@@ -5,9 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gmail.slartua.books</groupId>
-    <artifactId>Task2updates</artifactId>
+    <artifactId>TaskBooks</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Books</name>
+    <packaging>jar</packaging>
     <description>
         This app consist of array data of book, with implementation
         of sorts and searches. Module tests included.

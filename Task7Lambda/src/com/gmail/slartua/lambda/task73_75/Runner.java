@@ -7,7 +7,7 @@ public class Runner {
     public void run(){
         Integer[] arrInt = createArrayInt(12);
         System.out.println("Array: " + Arrays.toString(arrInt));
-//        Arrays.sort(arrInt, (obj1, obj2) -> obj2.compareTo(obj1));
+//      Arrays.sort(arrInt, (obj1, obj2) -> obj2.compareTo(obj1));
         Arrays.sort(arrInt, Comparator.reverseOrder());
         System.out.println("Array: " + Arrays.toString(arrInt));
 
