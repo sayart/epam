@@ -9,9 +9,9 @@ import java.io.*;
 
 public class InputOutputFile {
     final static Logger logger =
-            org.apache.log4j.Logger.getLogger(InputOutputFile.class);
+            Logger.getLogger(InputOutputFile.class);
     private static File file =
-            new File(".\\src\\resource\\data.ser");
+            new File(".\\src\\main\\resources\\data.ser");
 
     public static Book[] load() {
         try (ObjectInput oi = new ObjectInputStream(
@@ -21,7 +21,7 @@ public class InputOutputFile {
             logger.info("File not found!");
             return DataSource.getBooks();
         } catch (IOException | ClassNotFoundException exp) {
-            logger.error("Error i/o");
+            logger.error("Error read");
             return new Book[0];
         }
     }
@@ -31,9 +31,9 @@ public class InputOutputFile {
                 new FileOutputStream(file))){
             oo.writeObject(books);
         } catch (FileNotFoundException exp) {
-            System.err.println("file not found");
+            logger.info("File not found");
         } catch (IOException exp) {
-            System.err.println("Data not save");
+            logger.error("Error write");
         }
     }
 }

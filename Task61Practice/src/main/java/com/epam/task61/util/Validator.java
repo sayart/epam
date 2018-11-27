@@ -1,7 +1,6 @@
 package com.epam.task61.util;
 
 import java.time.LocalDate;
-import java.util.Locale;
 
 public class Validator {
     private final static String TEXT

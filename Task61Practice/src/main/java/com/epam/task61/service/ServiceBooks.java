@@ -1,15 +1,19 @@
 package com.epam.task61.service;
 
 import com.epam.task61.model.Books;
-import com.epam.task61.model.data.DataSource;
 import com.epam.task61.model.entity.Book;
 import com.epam.task61.util.InputOutputFile;
+import com.epam.task61.util.Languare;
+import com.epam.task61.util.ResourceManager;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Locale;
 
 public class ServiceBooks {
     private Books model = new Books();
+    private ResourceManager manager =
+            ResourceManager.INSTANCE;
 
     public ServiceBooks() {
 //        model.setBooks(DataSource.getBooks());
@@ -32,27 +36,33 @@ public class ServiceBooks {
     public String searchBooksByAuthor(String author){
         Book[] books = model.getByAuthor(author);
         if (books.length == 0) {
-            return "No books for : " + author;
+            return manager.getMessage("NO_BOOKS")
+                    + author;
         }
-        return "Books with author: " + author + "\n"
+        return manager.getMessage("BOOKS_AUTHOR")
+                + author + "\n"
                 + convertBooksInString(books);
     }
 
     public String searchBooksByPublisher(String publisher){
         Book[] books = model.getByPublisher(publisher);
         if (books.length == 0) {
-            return "No books for : " + publisher;
+            return manager.getMessage("NO_BOOKS")
+                    + publisher;
         }
-        return "Books with publisher:" + publisher
+        return manager.getMessage("BOOKS_PUBLISH")
+                + publisher
                 + "\n" + convertBooksInString(books);
     }
 
     public String searchBooksAfterYear(int year){
         Book[] books = model.getAfterYear(year);
         if (books.length == 0) {
-            return "No books after : " + year + " year";
+            return manager.getMessage("NO_BOOKS_YEAR")
+                    + year;
         }
-        return "Books after " + year + " year:\n"
+        return manager.getMessage("BOOKS_AFTER_YEAR")
+                + year + "\n"
                 + convertBooksInString(books);
     }
 
@@ -67,6 +77,12 @@ public class ServiceBooks {
         return convertBooksInString(books);
     }
 
+    public void changeLanguare(int choise) {
+        Languare[] languares = Languare.values();
+        Locale locale =
+                languares[choise - 1].getLocale();
+        manager.changeLocale(locale);
+    }
     public void saveBooks() {
         InputOutputFile.save(model.getBooks());
     }
